@@ -1,6 +1,5 @@
-#include "include/game.h"
+#include "../../include/game.h"
 
-int game_init()
+void game_init(void)
 {
-    
 }

@@ -1,12 +1,5 @@
-/*
-** EPITECH PROJECT, 2023
-** MY_H
-** File description:
-** MY_H
-*/
-
 #ifndef MY_H
-#define MY_H
+    #define MY_H
 
     #include <SFML/Graphics.h>
     #include <SFML/System.h>
@@ -26,16 +19,15 @@
 
     // struct
 
-
     typedef struct value_s {
         int game_status;
     } value_t;
 
     typedef struct window_info_s {
         sfRenderWindow *window;
+        sfVideoMode video;
+        sfEvent event;
         value_t game_value;
     } window_info_t;
-
-
 
 #endif /* !MY_H */
