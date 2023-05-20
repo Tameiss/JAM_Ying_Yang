@@ -11,6 +11,7 @@
         sfRectangleShape *rect;
         sfCircleShape *circle;
         sfFont *font;
+        sfText *text;
     } menu_data_t;
 
 /* functions */
