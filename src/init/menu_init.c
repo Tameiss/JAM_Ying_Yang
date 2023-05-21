@@ -6,6 +6,7 @@ static void background_menu(menu_data_t *menu_data)
     NULL);
     menu_data->sprite = sfSprite_create();
     sfSprite_setTexture(menu_data->sprite, menu_data->texture, sfTrue);
+    sfSprite_setPosition(menu_data->sprite, (sfVector2f) {0, 0});
 }
 
 static void options_menu(menu_data_t *menu_data)
@@ -20,6 +21,7 @@ static void options_menu(menu_data_t *menu_data)
     sfText_setFillColor(menu_data->text, sfBlack);
     sfText_setOutlineColor(menu_data->text, sfWhite);
     sfText_setOutlineThickness(menu_data->text, 2);
+    sfText_setPosition(menu_data->text, (sfVector2f) {0, 0});
 }
 
 static void hitbox_menu(menu_data_t *menu_data)
@@ -29,6 +31,7 @@ static void hitbox_menu(menu_data_t *menu_data)
     sfRectangleShape_setFillColor(menu_data->rect, sfTransparent);
     sfRectangleShape_setOutlineColor(menu_data->rect, sfRed);
     sfRectangleShape_setOutlineThickness(menu_data->rect, 5);
+    sfRectangleShape_setPosition(menu_data->rect, (sfVector2f) {0, 0});
 }
 
 void menu_init(menu_data_t *menu_data)

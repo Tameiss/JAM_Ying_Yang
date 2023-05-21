@@ -1,4 +1,5 @@
 SRC	=	src/main.c					\
+		src/is_hover.c 				\
 		src/run_menu.c 				\
 		src/run_game.c 				\
 		src/init/window_init.c 		\
